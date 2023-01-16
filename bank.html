@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900">
+    <header>
+        <h1 class="text-5xl font-bold text-blue-500 text-center mt-6"><u>Let's Get Some Money</u></h1>
+    </header>
+    <main>
+       <section>
+        <div class="grid grid-cols-3 gap-4 mt-10 w-9/12 mx-auto">
+           <div class="bg-indigo-300 rounded-xl p-6">
+            <h4 class="text-blue-500 text-4xl font-semibold">Deposit</h4>
+            <h2 class="text-blue-500 text-4xl font-semibold">$<span id="deposit-amount">00</span></h2>
+           </div>
+           <div class="bg-indigo-300 rounded-xl p-6">
+            <h4 class="text-blue-500 text-4xl font-semibold">Withdraw</h4>
+            <h2 class="text-blue-500 text-4xl font-semibold">$<span id="withdraw-amount">00</span></h2>
+           </div>
+           <div class="bg-indigo-300 rounded-xl p-6">
+            <h4 class="text-blue-500 text-4xl font-semibold">Balance</h4>
+            <h2 class="text-blue-500 text-4xl font-semibold">$<span id="balance-amount">6000</span></h2>
+           </div>
+        </div>
+       </section>
+       <section>
+        <div class="grid grid-cols-2 gap-6 mt-10 w-9/12 mx-auto">
+               <div class="bg-indigo-300 rounded-xl p-6">
+               <h2 class="text-blue-500 text-3xl font-semibold">Please Deposit</h2>
+               <input id="deposit-input" class="block w-9/12 px-3 mt-3" type="text"placeholder="enter your amount">
+               <button id="btn-deposit" class="bg-indigo-200 rounded p-2 mt-3 hover:bg-indigo-400">deposit</button>
+               </div>
+               <div class="bg-indigo-300 rounded-xl p-6">
+             <h2 class="text-blue-500 text-3xl font-semibold">Please Withdraw</h2>
+            <input id="withdraw-input" class="block w-9/12 px-3 mt-3" type="text" placeholder="enter your amount">
+            <button id="btn-withdraw" class="bg-indigo-200 rounded p-2 mt-3 hover:bg-indigo-400">withdraw</button>
+               </div>
+        </div>
+       </section>
+    </main>
+    <script src="./bank.js"></script>
+</body>
+</html>
